@@ -235,7 +235,7 @@ resource "local_file" "kubeconfig" {
     cluster_ca     = base64encode(yandex_kubernetes_cluster.regional_cluster.master[0].cluster_ca_certificate)
     k8s_cluster_id = yandex_kubernetes_cluster.regional_cluster.id
   })
-  file_permission = "0644"  # Права на чтение для всех, запись для владельца
+  
 }
 
 provider "kubernetes" {
