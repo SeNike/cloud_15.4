@@ -14,7 +14,6 @@ users:
       args:
       - k8s
       - create-token
-      #- --cluster-id=${k8s_cluster_id}
       - --profile=default
 contexts:
 - name: yc-context
